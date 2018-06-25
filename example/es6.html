@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>es6 example</title>
+	</head>
+	<body>
+		<script>
+			//let const
+// 			{
+// 				let name = "123"
+// 			}
+// 			
+// 			//块级作用域,在函数和全局里面使用
+// 			console.log(name)	
+
+
+			
+			//const是常量,不能修改
+// 			Assignment to constant variable.
+// 			const name = 25
+// 			name = 30
+			
+			
+			// str模板
+// 			let name = "jack"
+// 			let welcome = "hello"
+// 			console.log(`${name}${welcome}`)
+			
+			
+			// 箭头函数
+			// 一个参数的时候括号可以省略
+// 			const hello = name =>{}
+// 			const hello = (name)=>{
+// 				console.log(`${name}`)
+// 			}
+//			hello('jackwang')
+			
+			
+			// 如果函数中只有一个返回值
+// 			const dobule = x => x*2
+// 			console.log(dobule(5))
+			
+			// 函数中的默认值
+			// 函数中可以使用默认值,如果不写参数就用默认值,如果写参数就使用传入的参数
+// 			const hello =(name="jack")=>{
+// 				console.log(`${name}`)
+// 			}
+// 			hello('jackwang')
+			
+			
+			 // 数组的展开符
+			 
+			 //一般的数组作为参数需要使用apply 
+// 			 function name(name1,name2){
+// 				 console.log(`${name1} hello ${name2}`)
+// 			 }
+			 
+// 			 var arr = ["jackw","jhon"]
+// 			 name.apply(null,arr)
+			 
+			 //也可以使用展开符来传递参数
+// 			function name(name1,name2){
+// 				console.log(`${name1} hello ${name2}`)
+// 			}
+// 			
+// 			var arr = ["jackw","jhon"]
+// 			name(...arr)
+
+
+
+
+			//对象扩展object 
+// 			let obj = {name:"jack",course:"react"}
+// 			//获取object中的key和value
+// 			console.log(Object.keys(obj))			
+// 			console.log(Object.values(obj))
+// 			//key和value变成两个数组 
+// 			console.log(Object.entries(obj))
+
+
+// 			const name = "hello"
+// 			
+// 			const obj ={
+// 				name,	//==>name:name
+// 				[name]:jackwang,	//==>相当于拿到了外面定义的name
+// 				//函数的简写 
+// 				hello(){
+// 					console.log(1)
+// 				}
+// 			}
+
+			// 两个对象进行拼接
+// 			const obj = {name:'jackwang',course:"react"}
+// 			const obj1 = {type:'IT',name:"jack"}
+// 			
+// 			//出现相同的情况，后面的回覆盖前面的 
+// 			console.log({...obj,...obj1})
+			 
+			 
+			 // 解构赋值
+// 			 let arr = ["hell","jack"]
+// 			 let [arg1,arg2] = arr
+// 			 console.log(arg1 + "|" + arg2 )
+// 			 
+// 			 let obj = {name:"jack",wel:"hello"}
+// 			 let {name,wel} = obj
+// 			 console.log(name +  "|" + wel)
+
+			//类
+// 			class Myapp{
+// 				constructor(){
+// 					this.name = 'jack'
+// 				}
+// 				
+// 				sayhello(){
+// 					console.log(`hello ${this.name}`)
+// 				}
+// 			}
+// 			
+// 			const app = new Myapp()
+// 			app.sayhello()
+
+
+			
+
+			
+		</script>
+		
+		
+	</body>
+</html>
